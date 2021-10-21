@@ -1,1 +1,3 @@
-/home/www/wb3/modules/yonger/common/scripts/functions.php
+<?php
+@include_once(__DIR__ . '/engine/modules/yonger/common/scripts/functions.php');
+?>

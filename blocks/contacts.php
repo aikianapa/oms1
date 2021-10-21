@@ -22,7 +22,7 @@
                     </div>
 
                     <div class="oms-block-18-link-wrapper">
-                        <a href="{{_var.site}}">
+                        <a href="{{_var.outsite}}">
                             Перейти на основной сайт
                         </a>
                     </div>
