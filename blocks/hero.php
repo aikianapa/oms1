@@ -35,7 +35,7 @@
                 </div>
 
                 <div class="oms-buttons">
-                    <button class="oms-button" type="button" data-ajax="/api/mail/">
+                    <button class="oms-button" type="button" data-ajax="/ajax/mail/">
                         {{label_button}}
                     </button>
                 </div>
