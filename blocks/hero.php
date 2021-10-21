@@ -19,6 +19,7 @@
             </div>
             <div class="oms-block-1-form">
                 <form>
+                <input name="subject" value="{{label_button}}" type="hidden" data-label="Тема">
                 <div class="group">
                     <input class="input" required wb-mask="+7 (999) 999-99-99" name="phone" data-label="{{label_phone}}">
                     <label class="label">
