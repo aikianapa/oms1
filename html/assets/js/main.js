@@ -1,6 +1,6 @@
-import '../css/style.scss'
-import minusIcon from './assets/icons/minus.svg';
-import plusIcon from './assets/icons/plus.svg';
+//import '/assets/css/style.scss'
+var minusIcon = './assets/icons/minus.svg';
+var plusIcon = './assets/icons/plus.svg';
 
 document.addEventListener('DOMContentLoaded', function() {
     const swiper = new Swiper('.oms-block-12-swiper', {
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     const body = document.querySelector('body');
     const header = document.querySelector('.oms-header');
-    const block = document.querySelector('.oms-block-16');
+    const block = document.querySelectorAll('.oms-block-16');
     const menuOpenBtn = document.querySelector('.oms-header-menu-btn');
     const menuCloseBtn = document.querySelector('.oms-menu-close');
     const menuBlock = document.querySelector('.oms-menu');
@@ -68,29 +68,31 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     if (block) {
-        const items = block.querySelectorAll('.oms-block-16-item');
+        block.forEach((el) => {
+            const items = el.querySelectorAll('.oms-block-16-item');
 
-        items.forEach((el) => {
-            const row = el.querySelector('.oms-block-16-item-row');
-            const block2 = el.querySelector('.oms-block-16-item-block-2');
-            const block3 = el.querySelector('.oms-block-16-item-block-3');
-            const block4 = el.querySelector('.oms-block-16-item-block-4');
-            const block3Img = block3.querySelector('img');
+            items.forEach((el) => {
+                const row = el.querySelector('.oms-block-16-item-row');
+                const block2 = el.querySelector('.oms-block-16-item-block-2');
+                const block3 = el.querySelector('.oms-block-16-item-block-3');
+                const block4 = el.querySelector('.oms-block-16-item-block-4');
+                const block3Img = block3.querySelector('img');
 
-            if (row && block2 && block4 && block3Img) {
-                row.addEventListener('click', () => {
-                    if (block4.classList.contains('hidden')) {
-                        block4.classList.remove('hidden');
-                        block2.innerHTML = 'Нажмите, чтобы закыть';
-                        block3Img.src = minusIcon;
-                    } else {
-                        block4.classList.add('hidden');
-                        block2.innerHTML = 'Нажмите, чтобы открыть';
-                        block3Img.src = plusIcon;
-                    }
-                });
-            }
-        })
+                if (row && block2 && block4 && block3Img) {
+                    row.addEventListener('click', () => {
+                        if (block4.classList.contains('hidden')) {
+                            block4.classList.remove('hidden');
+                            block2.innerHTML = 'Нажмите, чтобы закыть';
+                            block3Img.src = minusIcon;
+                        } else {
+                            block4.classList.add('hidden');
+                            block2.innerHTML = 'Нажмите, чтобы открыть';
+                            block3Img.src = plusIcon;
+                        }
+                    });
+                }
+            })
+        });
     }
 
     if (header && buttonUp) {
