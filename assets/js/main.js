@@ -1,3 +1,4 @@
+"use strict"
 //import '/assets/css/style.scss'
 var minusIcon = './assets/icons/minus.svg';
 var plusIcon = './assets/icons/plus.svg';
@@ -126,4 +127,4 @@ document.addEventListener('DOMContentLoaded', function() {
             body.style.overflow = 'hidden';
         }
     }
-})
+});

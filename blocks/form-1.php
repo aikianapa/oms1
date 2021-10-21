@@ -7,13 +7,13 @@
                 <div class="col-12 col-md-6">
 
                     <div class="group">
-                        <input class="input" required>
+                        <input class="input" required name="fullname">
                         <label class="label">
                             Ваше имя
                         </label>
                     </div>
                     <div class="group">
-                        <input class="input" required>
+                        <input class="input" type="email" required name="email">
                         <label class="label">
                             Адрес E-mail
                         </label>
@@ -21,13 +21,13 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="group">
-                        <input class="input" required>
+                        <input class="input" required wb-mask="+7 (999) 999-99-99" name="phone">
                         <label class="label">
                             Номер телефона
                         </label>
                     </div>
                     <div class="group">
-                        <input class="input" required>
+                        <input class="input" required name="messenger">
                         <label class="label">
                             Удобный мессенджер
                         </label>
@@ -38,7 +38,7 @@
             <div class="row">
                 <div class="col">
                     <div class="group">
-                        <textarea class="input textarea" required></textarea>
+                        <textarea class="input textarea" required name="description"></textarea>
                         <label class="label">
                             Ваша ситуация
                         </label>
@@ -46,7 +46,7 @@
                 </div>
             </div>
             <div class="oms-buttons">
-                <button class="oms-button">
+                <button class="oms-button"  data-ajax="/api/mail/">
                     {{button}}
                 </button>
             </div>

@@ -18,25 +18,27 @@
                 </div>
             </div>
             <div class="oms-block-1-form">
+                <form>
                 <div class="group">
-                    <input class="input" required>
+                    <input class="input" required wb-mask="+7 (999) 999-99-99" name="phone" data-label="{{label_phone}}">
                     <label class="label">
                         {{label_phone}}
                     </label>
                 </div>
 
                 <div class="group">
-                    <input class="input" required>
+                    <input class="input" required name="fullname" data-label="{{label_name}}">
                     <label class="label">
                         {{label_name}}
                     </label>
                 </div>
 
                 <div class="oms-buttons">
-                    <button class="oms-button">
+                    <button class="oms-button" type="button" data-ajax="/api/mail/">
                         {{label_button}}
                     </button>
                 </div>
+                </form>
             </div>
         </div>
     </div>
