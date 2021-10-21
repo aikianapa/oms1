@@ -27,14 +27,14 @@
                         </a>
                     </div>
                 </div>
-                <div class="d-none d-md-block col-md-6">
-                    <div class="oms-block-18-map"></div>
+                <div class="col-12 d-block col-md-6">
+                    <div class="oms-block-18-map">
+                        <wb-module wb="module=yamap" zoom="16" center="55.770284 37.601016" >
+                            <geopos value="55.770284 37.601016" title="{{_var.brand}}"></geopos>
+                        </wb-module>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="d-md-none oms-block-18-mobile-map">
-
         </div>
     </div>
 </view>
