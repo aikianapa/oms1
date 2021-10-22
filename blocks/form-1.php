@@ -51,7 +51,7 @@
                     </div>
 
                 <div class="oms-buttons">
-                    <button type="button" class="oms-button" data-ajax="/ajax/mail/">
+                    <button type="button" class="oms-button" onclick="sendMail(this)">
                         {{_parent.button}}
                     </button>
                 </div>

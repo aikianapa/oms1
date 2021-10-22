@@ -127,4 +127,18 @@ document.addEventListener('DOMContentLoaded', function() {
             body.style.overflow = 'hidden';
         }
     }
+
+    window.sendMail = (btn) => {
+        let form = $(btn).parents('form');
+        let id = wbapp.newId('_', 'ax');
+        $(form).attr('id') == undefined ? $(form).attr('id', id) : null;
+        let params = { url: '/ajax/mail', _event: this, form: '#' + $(form).attr('id') };
+        wbapp.ajax(params, function(data) {
+            if (data.data.error) {
+
+            } else {
+                $(form)[0].reset();
+            }
+        });
+    }
 });
