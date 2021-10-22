@@ -38,7 +38,7 @@
                                 </label>
                             </div>
                             <div class="group">
-                                <input class="input" name="messenger" data-label="Удобный мессенджер">
+                                <input class="input" required name="messenger" data-label="Удобный мессенджер">
                                 <label class="label">
                                     Удобный мессенджер
                                 </label>
