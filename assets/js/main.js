@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     row.addEventListener('click', () => {
                         if (block4.classList.contains('hidden')) {
                             block4.classList.remove('hidden');
-                            block2.innerHTML = 'Нажмите, чтобы закыть';
+                            block2.innerHTML = 'Нажмите, чтобы закрыть';
                             block3Img.src = minusIcon;
                         } else {
                             block4.classList.add('hidden');
@@ -141,4 +141,14 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    /*    
+            $("*:contains('+7 (')").each(function() {
+                if ($(this).find("*:contains('+7 (')").length) return;
+                let tel = $(this).text();
+                tel = tel.replace(/\D+/g, "");
+                $(this).attr('href', 'tel:+' + tel);
+                $(this).addClass('js-phone_link');
+            });
+            */
 });
