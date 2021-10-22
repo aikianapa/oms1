@@ -7,7 +7,7 @@
                 <div class="col-12 col-md-6">
 
                     <div class="group">
-                        <input class="input" required name="fullname">
+                        <input class="input" required name="name">
                         <label class="label">
                             Ваше имя
                         </label>
@@ -46,7 +46,7 @@
                 </div>
             </div>
             <div class="oms-buttons">
-                <button class="oms-button"  data-ajax="/api/mail/">
+                <button class="oms-button"  data-ajax="/ajax/mail/">
                     {{button}}
                 </button>
             </div>

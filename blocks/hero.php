@@ -23,14 +23,14 @@
                         <input name="subject" value="{{_parent.label_button}}" type="hidden" data-label="Тема">
                         <input name="_mailto" value="{{_var.orders_email}}" type="hidden">
                         <div class="group">
-                            <input class="input" required wb-mask="+7 (999) 999-99-99" name="phone" data-label="{{label_phone}}">
+                            <input class="input" required wb-mask="+7 (999) 999-99-99" name="phone" data-label="{{_parent.label_phone}}">
                             <label class="label">
                                 {{_parent.label_phone}}
                             </label>
                         </div>
 
                         <div class="group">
-                            <input class="input" required name="name" data-label="{{label_name}}">
+                            <input class="input" required name="name" data-label="{{_parent.label_name}}">
                             <label class="label">
                                 {{_parent.label_name}}
                             </label>
