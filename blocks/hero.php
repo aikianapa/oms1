@@ -19,28 +19,29 @@
             </div>
             <div class="oms-block-1-form">
                 <form>
-                <input name="subject" value="{{label_button}}" type="hidden" data-label="Тема">
-                <input name="_mailto" value="{{_var.orders_email}}" type="hidden">
-                <wb-data>
-                <div class="group">
-                    <input class="input" required wb-mask="+7 (999) 999-99-99" name="phone" data-label="{{label_phone}}">
-                    <label class="label">
-                        {{_parent.label_phone}}
-                    </label>
-                </div>
+                    <wb-data>
+                        <input name="subject" value="{{_parent.label_button}}" type="hidden" data-label="Тема">
+                        <input name="_mailto" value="{{_var.orders_email}}" type="hidden">
+                        <div class="group">
+                            <input class="input" required wb-mask="+7 (999) 999-99-99" name="phone" data-label="{{label_phone}}">
+                            <label class="label">
+                                {{_parent.label_phone}}
+                            </label>
+                        </div>
 
-                <div class="group">
-                    <input class="input" required name="name" data-label="{{label_name}}">
-                    <label class="label">
-                        {{_parent.label_name}}
-                    </label>
-                </div>
-                </wb-data>
-                <div class="oms-buttons">
-                    <button class="oms-button" type="button" data-ajax="/ajax/mail/">
-                        {{label_button}}
-                    </button>
-                </div>
+                        <div class="group">
+                            <input class="input" required name="name" data-label="{{label_name}}">
+                            <label class="label">
+                                {{_parent.label_name}}
+                            </label>
+                        </div>
+
+                        <div class="oms-buttons">
+                            <button class="oms-button" type="button" data-ajax="/ajax/mail/">
+                                {{_parent.label_button}}
+                            </button>
+                        </div>
+                    </wb-data>
                 </form>
             </div>
         </div>
@@ -59,7 +60,7 @@
     </wb-multiinput>
     <div class="divider-text">Сноска и ссылка</div>
     <div class="row px-3">
-        <input class="form-control col-12 mb-1" type="text" name="text3" placeholder="Текст сноски">    
+        <input class="form-control col-12 mb-1" type="text" name="text3" placeholder="Текст сноски">
         <input class="form-control col-6" type="text" name="label" placeholder="Текст ссылки">
         <input class="form-control col-6" type="text" name="link" placeholder="Ссылка">
     </div>
