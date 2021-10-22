@@ -150,5 +150,5 @@ document.addEventListener('DOMContentLoaded', function() {
                 $(this).attr('href', 'tel:+' + tel);
                 $(this).addClass('js-phone_link');
             });
-            */
+    */
 });
