@@ -12,18 +12,19 @@
                 <form>
                         <input name="subject" value="Задать вопрос по болезни" type="hidden" data-label="Тема">
                         <input name="_mailto" value="{{_var.orders_email}}" type="hidden">
+                        <input name="source" value="{{_route.url}}" type="hidden" data-label="Источник">
                         <wb-data>
                     <div class="row">
                         <div class="col-12 col-md-6">
 
                             <div class="group">
-                                <input class="input" required name="name">
+                                <input class="input" required name="name" data-label="Имя">
                                 <label class="label">
                                     Ваше имя
                                 </label>
                             </div>
                             <div class="group">
-                                <input class="input" type="email" required name="email">
+                                <input class="input" type="email" required name="email" data-label="Адрес E-mail">
                                 <label class="label">
                                     Адрес E-mail
                                 </label>
@@ -31,13 +32,13 @@
                         </div>
                         <div class="col-12 col-md-6">
                             <div class="group">
-                                <input class="input" required wb-mask="+7 (999) 999-99-99" name="phone">
+                                <input class="input" required wb-mask="+7 (999) 999-99-99" name="phone" data-label="Номер телефона">
                                 <label class="label">
                                     Номер телефона
                                 </label>
                             </div>
                             <div class="group">
-                                <input class="input" required name="messenger">
+                                <input class="input" name="messenger" data-label="Удобный мессенджер">
                                 <label class="label">
                                     Удобный мессенджер
                                 </label>
@@ -48,7 +49,7 @@
                     <div class="row">
                         <div class="col">
                             <div class="group">
-                                <textarea class="input textarea" required name="description"></textarea>
+                                <textarea class="input textarea" required name="description" data-label="Описание ситуации"></textarea>
                                 <label class="label">
                                     Ваша ситуация
                                 </label>

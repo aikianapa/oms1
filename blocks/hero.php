@@ -22,6 +22,7 @@
                     <wb-data>
                         <input name="subject" value="{{_parent.label_button}}" type="hidden" data-label="Тема">
                         <input name="_mailto" value="{{_var.orders_email}}" type="hidden">
+                        <input name="source" value="{{_route.url}}" type="hidden" data-label="Источник">
                         <div class="group">
                             <input class="input" required wb-mask="+7 (999) 999-99-99" name="phone" data-label="{{_parent.label_phone}}">
                             <label class="label">
