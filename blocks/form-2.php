@@ -10,6 +10,9 @@
                     <img src="assets/icons/close.svg" alt="">
                 </button>
                 <form>
+                        <input name="subject" value="Задать вопрос по болезни" type="hidden" data-label="Тема">
+                        <input name="_mailto" value="{{_var.orders_email}}" type="hidden">
+                        <wb-data>
                     <div class="row">
                         <div class="col-12 col-md-6">
 
@@ -57,6 +60,7 @@
                             Отправить
                         </button>
                     </div>
+                    </wb-data>
                 </form>
             </section>
         </div>
