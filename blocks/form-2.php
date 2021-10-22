@@ -71,4 +71,15 @@
     <div>
         <wb-module wb="module=yonger&mode=edit&block=common.inc" />
     </div>
+    <div>
+        <wb-module wb="module=yonger&mode=edit&block=common.inc" />
+    </div>
+    <div class="form-group">
+        <label>Заголовок формы</label>
+        <input class="form-control" type="text" name="title">
+    </div>
+    <div class="form-group">
+        <label>Текст кнопки</label>
+        <input class="form-control" type="text" name="button">
+    </div>
 </edit>

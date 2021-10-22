@@ -50,7 +50,7 @@
                     </div>
 
                 <div class="oms-buttons">
-                    <button class="oms-button" data-ajax="/ajax/mail/">
+                    <button type="button" class="oms-button" data-ajax="/ajax/mail/">
                         {{_parent.button}}
                     </button>
                 </div>
