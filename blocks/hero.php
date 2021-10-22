@@ -25,20 +25,20 @@
                 <div class="group">
                     <input class="input" required wb-mask="+7 (999) 999-99-99" name="phone" data-label="{{label_phone}}">
                     <label class="label">
-                        {{label_phone}}
+                        {{_parent.label_phone}}
                     </label>
                 </div>
 
                 <div class="group">
                     <input class="input" required name="name" data-label="{{label_name}}">
                     <label class="label">
-                        {{label_name}}
+                        {{_parent.label_name}}
                     </label>
                 </div>
 
                 <div class="oms-buttons">
                     <button class="oms-button" type="button" data-ajax="/ajax/mail/">
-                        {{label_button}}
+                        {{_parent.label_button}}
                     </button>
                 </div>
                 </wb-data>
