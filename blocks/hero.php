@@ -19,9 +19,9 @@
             </div>
             <div class="oms-block-1-form">
                 <form>
-                    <wb-data>
                 <input name="subject" value="{{label_button}}" type="hidden" data-label="Тема">
                 <input name="_mailto" value="{{_var.orders_email}}" type="hidden">
+                <wb-data>
                 <div class="group">
                     <input class="input" required wb-mask="+7 (999) 999-99-99" name="phone" data-label="{{label_phone}}">
                     <label class="label">
@@ -35,13 +35,12 @@
                         {{_parent.label_name}}
                     </label>
                 </div>
-
+                </wb-data>
                 <div class="oms-buttons">
                     <button class="oms-button" type="button" data-ajax="/ajax/mail/">
-                        {{_parent.label_button}}
+                        {{label_button}}
                     </button>
                 </div>
-                </wb-data>
                 </form>
             </div>
         </div>
