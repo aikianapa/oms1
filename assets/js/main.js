@@ -142,13 +142,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    /*    
-            $("*:contains('+7 (')").each(function() {
-                if ($(this).find("*:contains('+7 (')").length) return;
-                let tel = $(this).text();
-                tel = tel.replace(/\D+/g, "");
-                $(this).attr('href', 'tel:+' + tel);
-                $(this).addClass('js-phone_link');
-            });
-    */
+    /*
+        $("*:contains('+7 (')").each(function() {
+            if ($(this).find("*:contains('+7 (')").length) return;
+            let tel = $(this).text();
+            tel = tel.replace(/\D+/g, "");
+            $(this).attr('href', 'tel:+' + tel);
+            $(this).addClass('js-phone_link');
+        });
+        */
 });

@@ -12,7 +12,7 @@
             </div>
             <div class="oms-menu-wrapper-hr"></div>
             <div class="oms-menu-wrapper-block-2">
-                <a href="tel:+{{wbDigitsOnly({{_var.phone}})}}">
+                <a class="js-phone_link" href="tel:+{{wbDigitsOnly({{_var.phone}})}}">
         {{_var.phone}}
       </a>
 

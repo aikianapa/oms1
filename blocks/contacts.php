@@ -14,7 +14,7 @@
                     <div class="oms-block-18-address text-break"><b>Адрес:</b> {{_var.address}}</div>
 
                     <div class="oms-block-18-info1">
-                        <a href="tel:+{{wbDigitsOnly({{_var.phone}})}}">{{_var.phone}}</a>
+                        <a class="js-phone_link" href="tel:+{{wbDigitsOnly({{_var.phone}})}}">{{_var.phone}}</a>
                     </div>
 
                     <div class="oms-block-18-info2">

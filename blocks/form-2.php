@@ -32,7 +32,7 @@
                         </div>
                         <div class="col-12 col-md-6">
                             <div class="group">
-                                <input class="input" required wb-mask="+7 (999) 999-99-99" name="phone" data-label="Номер телефона">
+                                <input class="input" required name="phone" data-label="Номер телефона">
                                 <label class="label">
                                     Номер телефона
                                 </label>
