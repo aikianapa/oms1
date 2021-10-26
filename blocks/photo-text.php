@@ -34,7 +34,7 @@
             <textarea class="form-control col-12" rows="auto" name="image_text" placeholder="Текст"></textarea>
         </div>
         <div class="col-8">
-            <label>Код встави видео</label>
+            <label>Текст справа</label>
             <textarea class="form-control col-12" rows="auto" name="text1" placeholder="Текст справа"></textarea>
         </div>
     </div>
