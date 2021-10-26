@@ -96,7 +96,7 @@
             let url = document.location.origin + $(this).attr('data-path');
             let target = md5(url);
             window.open(url, target).focus();
-            e.stopPropogation();
+            e.stopPropagation();
         });
 
         $('#yongerPagesTree').delegate('.dd-active',wbapp.evClick,function(e){
