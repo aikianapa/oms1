@@ -397,6 +397,14 @@ body {
                 margin-left: 32px;
             }
         }
+        &-text {
+            flex: 1;
+            margin-top: 32px;
+            @media (min-width: 992px) {
+                margin-top: 0;
+                margin-left: 32px;
+            }
+        }
     }
     &-block-11 {
         &-items {
