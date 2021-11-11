@@ -22,7 +22,7 @@
                 <div class="swiper-wrapper">
                     <wb-foreach wb-from="team">
                     <div class="swiper-slide">
-                        <img src="/thumbc/303x262/src{{avatar.0.img}}" alt="{{fullname}}">
+                        <img src="/thumbc/303x262/src{{avatar.0.img}}" alt="{{fullname}}" width="303" height="262">
                         <div class="oms-block-12-swiper-name">{{fullname}}</div>
                         <div class="oms-block-12-swiper-description text-break">{{text}}</div>
                     </div>

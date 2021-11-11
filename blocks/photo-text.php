@@ -6,7 +6,7 @@
 
             <div class="d-lg-flex">
                 <div>
-                    <img src="/thumbc/255x220/src{{image.0.img}}" alt="{{image_title}}">
+                    <img src="/thumbc/255x220/src{{image.0.img}}" alt="{{image_title}}" width="255" height="220">
                     <div class="oms-block-10-name">{{image_title}}</div>
                     <div class="oms-block-10-position text-break">{{image_text}}</div>
                 </div>

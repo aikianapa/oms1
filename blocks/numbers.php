@@ -1,9 +1,9 @@
 <view>
     <div class="oms-block oms-block-4">
         <div class="container">
-            <div class="row">
+            <div class="d-flex flex-column flex-md-row">
                 <wb-foreach wb-from="numbers">
-                <div class="col-12 col-md-4 oms-block-4-item">
+                <div class="oms-block-4-item">
                     <div class="oms-block-4-label">{{number}}</div>
                     <div class="oms-block-4-description text-break">{{text}}</div>
                 </div>

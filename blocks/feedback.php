@@ -11,7 +11,7 @@
                     <div class="oms-review">
 
                         <div class="d-flex">
-                            <img class="oms-review-img" src="/thumb/95x95/src/{{avatar.0.img}}" alt="{{fullname}}">
+                            <img class="oms-review-img" src="/thumb/95x95/src/{{avatar.0.img}}" alt="{{fullname}}" width="95" height="95">
                             <div>
                                 <div class="oms-review-name">{{fullname}}</div>
                                 <div class="oms-review-date">{{date}}</div>
