@@ -129,17 +129,29 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     window.sendMail = (btn) => {
+        $(document).off('wb-verify-false');
+        $(document).on('wb-verify-false', function(ev, inp) {
+            $(inp).css('background-color', '#f443367a');
+            setTimeout(function() {
+                $(inp).css('background-color', 'transparent');
+            }, 1000)
+        })
+
         let form = $(btn).parents('form');
         let id = wbapp.newId('_', 'ax');
         $(form).attr('id') == undefined ? $(form).attr('id', id) : null;
-        let params = { url: '/ajax/mail', _event: this, form: '#' + $(form).attr('id') };
-        wbapp.ajax(params, function(data) {
-            if (data.data.error) {
+        if ($('#' + $(form).attr('id')).verify()) {
+            let params = { url: '/ajax/mail', _event: this, form: '#' + $(form).attr('id') };
+            wbapp.ajax(params, function(data) {
+                if (data.data.error) {
 
-            } else {
-                $(form)[0].reset();
-            }
-        });
+                } else {
+                    $(form)[0].reset();
+                }
+            });
+        } else {
+
+        }
     }
 
     /*
