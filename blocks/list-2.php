@@ -9,7 +9,7 @@
                         <div class="oms-block-11-title text-break">{{text1}}</div>
                         <div class="oms-block-11-description text-break">{{text2}}</div>
                     </div>
-                    <img src="/thumbc/540x291/src{{image.0.img}}" alt="{{text1}}" width="540" height="540">
+                    <img src="/thumbc/540x291/src{{image.0.img}}" alt="{{text1}}">
                 </div>
                 </wb-foreach>
             </div>

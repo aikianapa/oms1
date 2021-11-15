@@ -16,7 +16,7 @@
                             <div class="text-break">{{text3}}</div>
                         </div>
                         <div class="col-12 col-lg-4 oms-block-6-item-block-3 text-lg-right">
-                            <img src="/thumbc/350x190/src/{{image.0.img}}" alt="{{text1}}" width="350" height="190">
+                            <img src="/thumbc/350x190/src/{{image.0.img}}" alt="{{text1}}">
                         </div>
                     </div>
                 </div>
