@@ -24,7 +24,7 @@
                                 </label>
                             </div>
                             <div class="group">
-                                <input class="input" type="email" required name="email" data-label="Адрес E-mail">
+                                <input class="input" type="email" name="email" data-label="Адрес E-mail">
                                 <label class="label">
                                     Адрес E-mail
                                 </label>
@@ -32,13 +32,13 @@
                         </div>
                         <div class="col-12 col-md-6">
                             <div class="group">
-                                <input class="input" required name="phone" data-label="Номер телефона">
+                                <input class="input" wb-mask="+7 (999) 999-99-99" required name="phone" data-label="Номер телефона">
                                 <label class="label">
                                     Номер телефона
                                 </label>
                             </div>
                             <div class="group">
-                                <input class="input" required name="messenger" data-label="Удобный мессенджер">
+                                <input class="input" name="messenger" data-label="Удобный мессенджер">
                                 <label class="label">
                                     Удобный мессенджер
                                 </label>
@@ -49,7 +49,7 @@
                     <div class="row">
                         <div class="col">
                             <div class="group">
-                                <textarea class="input textarea" required name="description" data-label="Описание ситуации"></textarea>
+                                <textarea class="input textarea" name="description" data-label="Описание ситуации"></textarea>
                                 <label class="label">
                                     Ваша ситуация
                                 </label>

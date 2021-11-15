@@ -24,7 +24,7 @@
                         <input name="_mailto" value="{{_var.orders_email}}" type="hidden">
                         <input name="source" value="{{_route.url}}" type="hidden" data-label="Источник">
                         <div class="group">
-                            <input class="input" required name="phone" data-label="{{_parent.label_phone}}">
+                            <input class="input" required name="phone" wb-mask="+7 (999) 999-99-99" data-label="{{_parent.label_phone}}">
                             <label class="label">
                                 {{_parent.label_phone}}
                             </label>
