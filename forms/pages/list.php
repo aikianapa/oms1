@@ -34,6 +34,7 @@
                             'sort':'date:d',
                             'size':'{{_sett.page_size}}',
                             'from':'list',
+                            'sort':'url',
                             'filter': {'_site':'{{_sett.site}}'}
                 }">
                 <li class="dd-item row" data-item="{{id}}" data-name="{{name}}">
