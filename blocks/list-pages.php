@@ -1,11 +1,11 @@
 <view>
-    <div id="oms-block-13" class="oms-block oms-block-13">
+    <div id="oms-list-pages" class="oms-block oms-list-pages">
         <div class="container">
             <div class="oms-title oms-title-mb-15">{{header}}</div>
 
             <div class="row">
                 <wb-foreach wb="table=pages&tpl=false&sort=header" wb-filter="{'active':'on','name':{'$ne':'home'}}">
-                <div class="col-12 col-md-6 oms-block-13-item">
+                <div class="col-12 col-md-6 oms-list-pages-item py-2">
                     <a href="{{url}}">{{header}}</a>
                 </div>
                 </wb-foreach>
