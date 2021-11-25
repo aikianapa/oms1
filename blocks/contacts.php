@@ -27,7 +27,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 d-block col-md-6">
+                <div class="d-none col-md-6 d-md-block col-md-6">
                     <div class="oms-block-18-map">
                         <wb-module wb="module=yamap" zoom="16" center="55.770284 37.601016" >
                             <geopos value="55.770284 37.601016" title="{{_var.brand}}"></geopos>
