@@ -96,6 +96,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    const mobileBottomBar = document.querySelector('.mobile-bottom-bar');
+    const checkAndChangeDisplayValue = () => {
+        if (window.innerWidth < 992) {
+            if (window.scrollY > 0) {
+                mobileBottomBar.style.display = 'flex';
+            } else {
+                mobileBottomBar.style.display = 'none';
+            }
+        }
+    }
+    document.addEventListener('scroll', checkAndChangeDisplayValue);
+    checkAndChangeDisplayValue();
+    mobileBottomBar.querySelector('.mobile-bottom-bar-top').addEventListener('click', () => {
+        window.scroll({ top: 0, behavior: 'smooth' });
+    })
+
+
     if (header && buttonUp) {
         document.addEventListener('scroll', () => {
             if (window.scrollY > 0) {
